@@ -22,7 +22,7 @@ function App() {
       opacity: 0,
       onUpdate: () => {
         if (tl.progress() >= 0.9) {
-          document.querySelector(".svg").remove()
+          document.querySelector(".svg")?.remove()
           setShowContent(true);
          // this.kill()
 
